@@ -28,7 +28,7 @@ export const Contact: React.FC = () => {
 
               <div className="flex items-center gap-6 mb-8">
                 <img 
-                  src="/public/dev-profile.png" 
+                  src="/dev-profile.png" 
                   alt="Developer" 
                   className="w-16 h-16 rounded-full border-2 border-island-teal object-cover"
                 />

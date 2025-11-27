@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-island-sand/20 to-island-sand z-10"></div>
         <img 
-          src="/public/Hero.jpeg" 
+          src="/Hero.jpeg" 
           alt="Siquijor Background" 
           className="w-full h-full object-cover opacity-20"
         />
@@ -113,7 +113,7 @@ export const Hero: React.FC = () => {
             {/* Content Preview */}
             <div className="relative w-full h-[calc(100%-1.5rem)] overflow-hidden">
                <img 
-                 src="/public/web mockup.jpeg" 
+                 src="/web mockup.jpeg" 
                  alt="Resort Website Mockup" 
                  className="w-full h-full object-cover" 
                />
