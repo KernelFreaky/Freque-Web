@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-island-sand/20 to-island-sand z-10"></div>
         <img 
-          src="/dist/assets/Hero.jpeg" 
+          src="/public/Hero.jpeg" 
           alt="Siquijor Background" 
           className="w-full h-full object-cover opacity-20"
         />
@@ -51,10 +51,10 @@ export const Hero: React.FC = () => {
             Based in Siquijor. Built for Speed.
           </div>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-island-slate mb-6">
-            Stop Losing Tourists to <span className="text-island-teal">Bad Signal.</span>
+            Stop Losing Customers <span className="text-island-teal">to Competition</span>
           </h1>
           <p className="text-lg md:text-xl text-island-slate/70 mb-8 leading-relaxed">
-            Most visitors can't find your Facebook menu. Give them a fast, professional site they can actually load and explore. Get found on Google in 72 hours.
+            Most visitors can't find your Facebook menu. Give them a fast, professional site they can actually load and explore.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -113,7 +113,7 @@ export const Hero: React.FC = () => {
             {/* Content Preview */}
             <div className="relative w-full h-[calc(100%-1.5rem)] overflow-hidden">
                <img 
-                 src="https://picsum.photos/800/600" 
+                 src="/public/web mockup.jpeg" 
                  alt="Resort Website Mockup" 
                  className="w-full h-full object-cover" 
                />

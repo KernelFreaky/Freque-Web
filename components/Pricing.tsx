@@ -52,12 +52,12 @@ const PricingCard: React.FC<{
         ))}
       </div>
 
-      <Button 
+      {/* <Button 
         variant={isPopular ? "primary" : "outline"} 
         className={`w-full justify-center ${!isPopular && "border-gray-200 text-gray-600"}`}
       >
         Select Package
-      </Button>
+      </Button> */}
     </motion.div>
   );
 };
@@ -75,7 +75,7 @@ export const Pricing: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <PricingCard
             title="The Starter"
             price="4,999"
@@ -102,7 +102,7 @@ export const Pricing: React.FC = () => {
               "1 Month Support"
             ]}
           />
-          <PricingCard
+          {/* <PricingCard
             title="The Business"
             price="15,000"
             delay={0.2}
@@ -114,7 +114,7 @@ export const Pricing: React.FC = () => {
               "Blog / News Section",
               "Priority Support"
             ]}
-          />
+          /> */}
         </div>
       </div>
     </section>

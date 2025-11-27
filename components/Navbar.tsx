@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="font-heading font-bold text-2xl text-island-teal tracking-tight flex items-center gap-1">
-          <img src="/dist/assets/FPJ Logo.png" alt="Freque Web Logo" width={40}/>
+          <img src="/public/FPJ Logo.png" alt="Freque Web Logo" width={40}/>
           <div className="w-2 h-2 rounded-full bg-island-orange mt-1"></div>
         </a>
 

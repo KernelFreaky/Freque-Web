@@ -28,34 +28,34 @@ export const Contact: React.FC = () => {
 
               <div className="flex items-center gap-6 mb-8">
                 <img 
-                  src="https://picsum.photos/200/200" 
+                  src="/public/dev-profile.png" 
                   alt="Developer" 
                   className="w-16 h-16 rounded-full border-2 border-island-teal object-cover"
                 />
                 <div>
-                  <p className="font-bold text-white">Your Name</p>
-                  <p className="text-island-teal text-sm">Lead Developer @ IslaDigital</p>
+                  <p className="font-bold text-white">Frequemarf Paculba Jr.</p>
+                  <p className="text-island-teal text-sm">Web Developer</p>
                 </div>
               </div>
 
               <div className="space-y-4">
-                <a href="mailto:hello@isladigital.com" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
+                <a href="mailto:frequeverse@gmail.com" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
                   <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                     <Mail size={18} />
                   </div>
-                  hello@isladigital.com
+                  frequeverse@gmail.com
                 </a>
                 <div className="flex items-center gap-3 text-gray-300">
                   <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                     <Phone size={18} />
                   </div>
-                  +63 912 345 6789
+                  +63 999 912 9152
                 </div>
                 <a href="#" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
                   <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
                     <Facebook size={18} />
                   </div>
-                  /IslaDigitalPH
+                  /FrequeWebPH
                 </a>
               </div>
             </motion.div>
