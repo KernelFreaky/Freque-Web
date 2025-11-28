@@ -5,6 +5,7 @@ import { ProblemSection } from './components/ProblemSection';
 import { Portfolio } from './components/Portfolio';
 import { Pricing } from './components/Pricing';
 import { Contact } from './components/Contact';
+import WhoNeedsSection from './components/WhoNeedsSection';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <ProblemSection />
+        <WhoNeedsSection/>
         <Portfolio />
         <Pricing />
         <Contact />
