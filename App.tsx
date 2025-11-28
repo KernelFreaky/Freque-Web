@@ -1,30 +1,15 @@
 import React from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { ProblemSection } from './components/ProblemSection';
-import { Portfolio } from './components/Portfolio';
-import { Pricing } from './components/Pricing';
-import { Contact } from './components/Contact';
-import WhoNeedsSection from './components/WhoNeedsSection';
+import { Routes, Route } from 'react-router-dom';
+import { ProjectsPage } from './components/ProjectsPage';
+import Home from './Home';
 
-const App: React.FC = () => {
+function App() {
   return (
-    <div className="flex flex-col min-h-screen relative w-full overflow-hidden">
-      <Navbar />
-      <main className="flex-grow">
-        <Hero />
-        <ProblemSection />
-        <WhoNeedsSection/>
-        <Portfolio />
-        <Pricing />
-        <Contact />
-      </main>
-      
-      <footer className="bg-island-slate text-island-sand py-8 text-center text-sm opacity-90">
-        <p>© {new Date().getFullYear()} FrequeWeb. Built with ♥ in Siquijor.</p>
-      </footer>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path="/projects" element={<ProjectsPage />} />
+    </Routes>
   );
-};
+}
 
 export default App;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import { Button } from './ui/Button';
+import { useNavigate } from 'react-router-dom';
 
 type Category = 'Eatery' | 'Resort' | 'Rental';
 
@@ -25,6 +26,7 @@ const projects: Record<Category, { title: string; desc: string; image: string }>
 
 export const Portfolio: React.FC = () => {
   const [activeTab, setActiveTab] = useState<Category>('Resort');
+  const navigate = useNavigate();
 
   return (
     <section id="portfolio" className="py-24 bg-island-sand relative overflow-hidden">
@@ -142,7 +144,7 @@ export const Portfolio: React.FC = () => {
           <Button 
             variant="outline" 
             className="gap-2"
-            onClick={() => window.location.href = '/projects'}
+            onClick={() => navigate('/projects')}
           >
             View More Projects <ArrowRight size={16} />
           </Button>
