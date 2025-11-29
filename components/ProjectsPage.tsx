@@ -5,6 +5,7 @@ import { ProjectCard } from '../components/ProjectCard';
 import { CategoryTabs } from '../components/CategoryTabs';
 import { Contact } from './Contact';
 import { ProjectNavbar } from './ProjectNav';
+import { ScrollToTop } from './ScrollToTop';
 
 export const ProjectsPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<CategoryType>('All');
@@ -19,8 +20,9 @@ export const ProjectsPage: React.FC = () => {
 
   return (
     <>
+        <ScrollToTop/>
         <ProjectNavbar/>
-        
+
         <div className="min-h-screen bg-white flex flex-col">
             {/* Main Content Area */}
             <main className="flex-grow pt-20 pb-20 px-4 sm:px-6 lg:px-8">

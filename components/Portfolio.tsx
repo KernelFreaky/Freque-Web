@@ -4,10 +4,10 @@ import { ExternalLink, ArrowRight } from 'lucide-react';
 import { Button } from './ui/Button';
 import { useNavigate } from 'react-router-dom';
 
-type Category = 'Eatery' | 'Resort' | 'Rental';
+type Category = 'OnePager' | 'Resort' | 'Rental';
 
 const projects: Record<Category, { title: string; desc: string; image: string }> = {
-  Eatery: {
+  OnePager: {
     title: "Coco Grove Bistro",
     desc: "A mobile-first menu and reservation system that loads instantly even on 3G.",
     image: "https://picsum.photos/1000/700?random=1"
@@ -25,7 +25,7 @@ const projects: Record<Category, { title: string; desc: string; image: string }>
 };
 
 export const Portfolio: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<Category>('Resort');
+  const [activeTab, setActiveTab] = useState<Category>('OnePager');
   const navigate = useNavigate();
 
   return (
@@ -41,10 +41,10 @@ export const Portfolio: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-xl">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-island-slate mb-4">
-              Recent Island <span className="text-island-teal">Projects</span>
+              Projects <span className="text-island-teal">Offered</span>
             </h2>
             <p className="text-island-slate/70">
-              See how we've helped other local businesses stand out.
+              Type of websites tailored for your promotional need.
             </p>
           </div>
 
